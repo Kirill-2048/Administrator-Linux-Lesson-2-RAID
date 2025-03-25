@@ -64,3 +64,8 @@ root@ubuntu:~# mdadm /dev/md0 --remove /dev/sde
 mdadm: hot removed /dev/sde from /dev/md0
 root@ubuntu:~#
 
+Rebuilding disc
+
+root@ubuntu:~# mdadm /dev/md0 --add /dev/sde
+mdadm: added /dev/sde
+root@ubuntu:~#
