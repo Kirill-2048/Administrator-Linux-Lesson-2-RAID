@@ -93,6 +93,8 @@ Information: You may need to update /etc/fstab.
 root@ubuntu:~# parted /dev/md0 mkpart primary ext4 40% 60%
 Information: You may need to update /etc/fstab.
 
+!!! Error !!! forgot parted /dev/md0 mkpart primary ext4 60% 80%
+
 root@ubuntu:~# parted /dev/md0 mkpart primary ext4 80% 100%
 Information: You may need to update /etc/fstab.
 
