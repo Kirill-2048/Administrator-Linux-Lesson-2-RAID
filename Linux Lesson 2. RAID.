@@ -77,3 +77,23 @@ md0 : active raid6 sde[5] sdf[4] sdd[2] sdc[1] sdb[0]
 
 unused devices: <none>
 root@ubuntu:~#
+
+Creating GPT and partitions
+
+root@ubuntu:~# parted -s /dev/md0 mklabel gpt
+root@ubuntu:~#
+root@ubuntu:~# parted -s /dev/md0 mklabel gpt
+root@ubuntu:~#
+root@ubuntu:~# parted /dev/md0 mkpart primary ext4 0% 20%
+Information: You may need to update /etc/fstab.
+
+root@ubuntu:~# parted /dev/md0 mkpart primary ext4 20% 40%
+Information: You may need to update /etc/fstab.
+
+root@ubuntu:~# parted /dev/md0 mkpart primary ext4 40% 60%
+Information: You may need to update /etc/fstab.
+
+root@ubuntu:~# parted /dev/md0 mkpart primary ext4 80% 100%
+Information: You may need to update /etc/fstab.
+
+root@ubuntu:~#
