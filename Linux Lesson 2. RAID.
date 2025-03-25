@@ -97,3 +97,11 @@ root@ubuntu:~# parted /dev/md0 mkpart primary ext4 80% 100%
 Information: You may need to update /etc/fstab.
 
 root@ubuntu:~#
+
+Mounting
+
+root@ubuntu:~# mkdir -p /raid/part{1,2,3,4,5}
+root@ubuntu:~# for i in $(seq 1 5); do mount /dev/md0p$i /raid/part$i; done
+mount: /raid/part5: special device /dev/md0p5 does not exist.
+       dmesg(1) may have more information after failed mount system call.
+root@ubuntu:~#
