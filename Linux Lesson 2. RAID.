@@ -59,3 +59,8 @@ md0 : active raid6 sdf[4] sde[3](F) sdd[2] sdc[1] sdb[0]
 
 unused devices: <none>
 root@ubuntu:~#
+
+root@ubuntu:~# mdadm /dev/md0 --remove /dev/sde
+mdadm: hot removed /dev/sde from /dev/md0
+root@ubuntu:~#
+
