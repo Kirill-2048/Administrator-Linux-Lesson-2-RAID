@@ -1,7 +1,8 @@
 Administrator Linux Professional.
 Lesson 2. RAID.
 
-Созданные диски
+Созданные диски:
+
 root@ubuntu:~# lsblk
 NAME                      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
 sda                         8:0    0   50G  0 disk
